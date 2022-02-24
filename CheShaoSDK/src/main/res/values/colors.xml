@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="dialog_background_75p">#c0000000</color>
+    <color name="background_tab_pressed">#6633B5E5</color>
+    <color name="background_transparent">#CC000000</color>
+    <color name="webview_dialog_background">#8016161e</color>
+    <color name="left_panel_dialog_dashboard_background">#16161e</color>
+    <color name="deactive_icon">#7a7a7a</color>
+    <color name="active_icon">#f14308</color>
+    <color name="active_text">#FFFFFF</color>
+    <color name="deactive_text">#61616A</color>
+
+    <color name="rb_text_selected">#f14308</color>
+    <color name="rb_text">#aeaeae</color>
+    <color name="rb_bg">#Ff753a</color>
+    <color name="rb_bg_selected">#f14308</color>
+
+    <color name="btn_login">#FF753A</color>
+    <color name="btn_login_focused">#1877F2</color>
+    <color name="btn_login_pressed">#ec9b9f</color>
+
+    <color name="btn_playnow">#DEDEDE</color>
+    <color name="btn_playnow_pressed">#c3c2c2</color>
+    <color name="btn_confirm_pressed">#eaeaea</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="text_bodder">#f1f1f1</color>
+    <color name="text_btn_google">#7C7C7C</color>
+    <color name="link_text">#0038FF</color>
+
+    <color name="btn_goolge">#4082EE</color>
+    <color name="btn_google_pressed">#3367D6</color>
+    <color name="btn_facebook">#3B5998</color>
+    <color name="btn_facebook_pressed">#156ad7</color>
+    <color name="btn_google_game">#3DB39E</color>
+    <color name="btn_google_game_pressed">#4ad4bc</color>
+
+    <color name="gray">#ADACAC</color>
+    <color name="green">#689f38</color>
+
+    <color name="bg_18_plus_login">#80000000</color>
+    <color name="bg_login_social">#F7F7F7</color>
+    <color name="bg_null">#00ffffff</color>
+    <color name="bg_login_content">#ffffff</color>
+    <color name="err_text">#FF4E3D</color>
+    <color name="text_term_port">#61616A</color>
+    <color name="color_light_red">#FF4E3D</color>
+    <color name="color_dark_grey">#61616A</color>
+    <color name="color_bg_login_fb">#007AFF</color>
+    <color name="color_bg_login_gg">#DEDEDE</color>
+    <color name="color_bg_login_playnow">#FF4E3D</color>
+</resources>

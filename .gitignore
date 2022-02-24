@@ -1,0 +1,6 @@
+# Project exclude paths
+/.gradle/
+/CheShaoSDK/build/
+/CheShaoSDK/build/intermediates/javac/debug/classes/
+/gameActivity/build/
+/gameActivity/build/intermediates/javac/debug/classes/

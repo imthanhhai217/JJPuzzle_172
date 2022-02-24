@@ -1,0 +1,115 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <bool name="isTablet">false</bool>
+
+    <!-- Per the design guidelines, navigation drawers should be between 240dp and 320dp:
+         https://developer.android.com/design/patterns/navigation-drawer.html -->
+    <dimen name="navigation_drawer_width">240dp</dimen>
+    <dimen name="dialog_image_button_space">15dp</dimen>
+
+    <dimen name="dialog_logout_main_width">320dp</dimen>
+    <dimen name="dialog_logout_img_banner_width">300dp</dimen>
+    <dimen name="dialog_logout_button_width">300dp</dimen>
+    <dimen name="dialog_button_logout_width">300dp</dimen>
+    <dimen name="dialog_logout_img_banner_height">100dp</dimen>
+    <dimen name="dialog_logout_form_button_height">40dp</dimen>
+
+    <dimen name="dialog_logout_main_portrait_width">300dp</dimen>
+    <dimen name="dialog_logout_img_banner_portrait_width">270dp</dimen>
+    <dimen name="dialog_logout_button_portrait_width">270dp</dimen>
+    <dimen name="dialog_button_logout_portrait_width">270dp</dimen>
+    <dimen name="dialog_logout_img_banner_portrait_height">90dp</dimen>
+    <dimen name="dialog_logout_form_button_portrait_height">40dp</dimen>
+    <dimen name="dimen_10">10dp</dimen>
+    <dimen name="dimension_30">30dp</dimen>
+
+    <dimen name="header_bar_height">40dp</dimen>
+    <dimen name="header_dialog_height">40dp</dimen>
+    <dimen name="header_dialog_height_port">48dp</dimen>
+    <dimen name="float_dialog_paddingTop">5dp</dimen>
+    <dimen name="float_dialog_paddingBottom">10dp</dimen>
+    <dimen name="float_dialog_txt_guide_textSize">17sp</dimen>
+    <dimen name="float_dialog_cbx_show_tips_again_marginTop">15dp</dimen>
+    <dimen name="float_dialog_cbx_show_tips_again_marginBottom">10dp</dimen>
+    <dimen name="float_dialog_cbx_show_tips_again_drawablePadding">5dp</dimen>
+    <dimen name="height_dashboard">400dp</dimen>
+    <dimen name="height_logout_webview">300dp</dimen>
+    <dimen name="height_logout_webview_land">200dp</dimen>
+    <dimen name="height_force_logout">150dp</dimen>
+    <dimen name="width_force_logout">318dp</dimen>
+    <dimen name="height_dashborad">416dp</dimen>
+
+    <dimen name="height_dashboard_land_top">24dp</dimen>
+    <dimen name="height_dashboard_land_bottom">24dp</dimen>
+    <dimen name="height_dashboard_land_left">24dp</dimen>
+    <dimen name="height_dashboard_land_right">24dp</dimen>
+
+    <dimen name="height_dashborad_land_tablet_top">24dp</dimen>
+    <dimen name="height_dashborad_land_tablet_bottom">24dp</dimen>
+    <dimen name="height_dashborad_land_tablet_left">24dp</dimen>
+    <dimen name="height_dashborad_land_tablet_right">24dp</dimen>
+    <dimen name="height_layout_notice_180_min">30dp</dimen>
+
+
+    <!-- Auto dimen -->
+
+    <dimen name="height_login_header">175dp</dimen>
+    <dimen name="margin_top_login">80dp</dimen>
+    <dimen name="margin_left_login">20dp</dimen>
+    <dimen name="margin_right_login">20dp</dimen>
+    <dimen name="margin_bottom_login">10dp</dimen>
+    <dimen name="padding_form_login">24dp</dimen>
+    <dimen name="padding_form_login_top">5dp</dimen>
+    <dimen name="padding_form_login_bottom">5dp</dimen>
+    <dimen name="top_title_login">5dp</dimen>
+    <dimen name="font_size_title_login">20dp</dimen>
+    <dimen name="title_input_login">12dp</dimen>
+    <dimen name="margin_top_form_input_login">10dp</dimen>
+    <dimen name="height_btn_email_edit_pass">25dp</dimen>
+    <dimen name="margin_btn_email_edit_pass_bottom">10dp</dimen>
+    <dimen name="dimension_40">40dp</dimen>
+    <dimen name="dimension_330">330dp</dimen>
+    <dimen name="dimension_10">10dp</dimen>
+
+
+    <dimen name="dialog_width">550dp</dimen>
+
+    <dimen name="padding_xnormal">15dp</dimen>
+    <dimen name="padding_normal">12dp</dimen>
+    <dimen name="padding_snormal">7dp</dimen>
+    <dimen name="padding_small">4dp</dimen>
+    <dimen name="padding_ssmall">2dp</dimen>
+    <dimen name="padding_large">24dp</dimen>
+
+    <!--    Layout-->
+    <dimen name="leftContent">330dp</dimen>
+    <dimen name="rightContent">290dp</dimen>
+    <!--  button - icon size -->
+    <dimen name="icon_18_plus_height">40dp</dimen>
+    <dimen name="icon_term_size">20dp</dimen>
+    <dimen name="button_close_width">32dp</dimen>
+    <dimen name="button_close_height">40dp</dimen>
+    <dimen name="button_corner">8dp</dimen>
+    <dimen name="btn_height">40dp</dimen>
+    <dimen name="btn_height_port">38dp</dimen>
+    <dimen name="button_text_size">13sp</dimen>
+    <dimen name="dimension_5">5dp</dimen>
+
+    <!--    Toast-->
+    <dimen name="toast_height">40dp</dimen>
+    <dimen name="toast_corner">20dp</dimen>
+    <dimen name="toast_icon_size">24dp</dimen>
+    <dimen name="toast_padding">8dp</dimen>
+
+    <!--  Text size -->
+    <dimen name="input_text_size">14sp</dimen>
+    <dimen name="term_text_size">8sp</dimen>
+    <dimen name="toast_text_size">14sp</dimen>
+    <dimen name="input_text_size_land">14sp</dimen>
+    <dimen name="header_text_size_land">14sp</dimen>
+    <dimen name="err_text_size">12sp</dimen>
+    <dimen name="radius_login">12dp</dimen>
+
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <string name="app_name">SDK IP 172 5.0.0</string>
+    <string name="login">Login</string>
+    <string name="login_native">Login</string>
+    <string name="logout">Logout</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="payment">Payment</string>
+    <string name="payment_native">Payment Native</string>
+    <string name="payment_with_state">Payment-State</string>
+    <string name="hockey_appid">15ced69a4a044b3082bb645ad11e6567</string>
+    <string name="hockey_secret">3e447e6dfbe000afcd85ab5112ca9597</string>
+    <string name="exit_question">Bạn có muốn thoát app không ?</string>
+    <string name="facebook_app_id">334086956714326</string>
+    <string name="fb_login_protocol_scheme" tools:ignore="ExtraTranslation">fb695731684477188</string>
+    <string name="default_notification_channel_id">default channel</string>
+    <string name="payment_native_state">Payment Native With State</string>
+    <string name="save_base_url">Lưu Url</string>
+    <string name="check_save_charactor">RoleId và AreaId không được bỏ trống</string>
+    <string name="logout_now">Đăng xuất</string>
+</resources>
+

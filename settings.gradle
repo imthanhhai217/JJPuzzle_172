@@ -1,0 +1,2 @@
+include ':CheShaoSDK'//, ':mbgm-android-ads-sdk'
+include ':gameActivity'

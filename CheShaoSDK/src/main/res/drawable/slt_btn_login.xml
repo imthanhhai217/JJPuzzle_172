@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="true">
+        <shape>
+
+            <solid android:color="@color/btn_login_pressed" />
+            <corners android:radius="@dimen/button_corner" />
+        </shape>
+    </item>
+
+    <item >
+        <shape android:shape="rectangle">
+            <solid android:color="@color/color_light_red" />
+            <corners android:radius="@dimen/button_corner" />
+        </shape>
+    </item>
+
+</selector>

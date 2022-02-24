@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/JJPuzzle_172.iml" filepath="$PROJECT_DIR$/.idea/modules/JJPuzzle_172.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/CheShaoSDK/JJPuzzle_172.CheShaoSDK.iml" filepath="$PROJECT_DIR$/.idea/modules/CheShaoSDK/JJPuzzle_172.CheShaoSDK.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/gameActivity/JJPuzzle_172.gameActivity.iml" filepath="$PROJECT_DIR$/.idea/modules/gameActivity/JJPuzzle_172.gameActivity.iml" />
+    </modules>
+  </component>
+</project>

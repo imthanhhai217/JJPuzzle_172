@@ -1,0 +1,568 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:layout_weight="1">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:keepScreenOn="true">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/contentPanel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/padding_large"
+                app:cardBackgroundColor="@null"
+                app:cardCornerRadius="@dimen/padding_normal"
+                app:cardElevation="0dp"
+                app:cardPreventCornerOverlap="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/bg_login_content"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+
+                    <LinearLayout
+                        android:id="@+id/layout_content_top"
+                        android:layout_width="@dimen/leftContent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/padding_xnormal"
+                        android:visibility="visible"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/header_text_land"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/header_login"
+                                android:textAllCaps="true"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tvForgotPass"
+                                style="@style/header_text_land"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="end"
+                                android:text="@string/lbl_forget_pass"
+                                android:textColor="@color/color_light_red"
+                                android:textSize="@dimen/button_text_size" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/padding_normal"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical">
+
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:id="@+id/til_acc_login_activity"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/btn_height"
+                                android:background="@drawable/background_login_email_edittex"
+                                android:orientation="horizontal"
+                                app:hintEnabled="false">
+
+                                <ImageView
+                                    android:id="@+id/ic_acc"
+                                    android:layout_width="18dp"
+                                    android:layout_height="18dp"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginStart="16dp"
+                                    android:src="@drawable/ic_account"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    android:contentDescription="@string/enter_email" />
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/edtLoginAccount"
+                                    style="@style/input_login_text_land"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginStart="@dimen/padding_normal"
+                                    android:layout_marginEnd="@dimen/padding_normal"
+                                    android:backgroundTint="@android:color/transparent"
+                                    android:hint="@string/enter_email"
+                                    android:importantForAutofill="no"
+                                    android:inputType="textEmailAddress"
+                                    android:textColor="@color/color_dark_grey"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toEndOf="@id/ic_acc"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                            <TextView
+                                android:id="@+id/tvErrUser"
+                                style="@style/err_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="@dimen/padding_normal"
+                                android:visibility="gone" />
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:id="@+id/til_password_login_activity"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/btn_height"
+                                android:layout_marginTop="@dimen/padding_normal"
+                                android:background="@drawable/background_login_email_edittex"
+                                android:gravity="center_horizontal"
+                                app:hintEnabled="false"
+                                app:passwordToggleEnabled="true"
+                                app:passwordToggleTint="@color/deactive_text">
+
+                                <ImageView
+                                    android:id="@+id/ic_pass"
+                                    android:layout_width="18dp"
+                                    android:layout_height="18dp"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginStart="16dp"
+                                    android:src="@drawable/ic_password"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    android:contentDescription="@string/lbl_input_pass" />
+
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="0dp"
+                                    android:backgroundTint="@android:color/transparent"
+                                    android:gravity="center_horizontal"
+                                    app:hintEnabled="false"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toEndOf="@id/ic_pass"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:passwordToggleEnabled="true"
+                                    app:passwordToggleTint="@color/deactive_text">
+
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:id="@+id/edtLoginPassword"
+                                        style="@style/input_login_text_land"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginStart="@dimen/padding_normal"
+                                        android:layout_marginEnd="@dimen/padding_normal"
+                                        android:backgroundTint="@android:color/transparent"
+                                        android:hint="@string/lbl_input_pass"
+                                        android:maxLength="32"
+                                        android:imeOptions="actionSend|flagNoFullscreen"
+                                        android:importantForAutofill="no"
+                                        android:inputType="textPassword"
+                                        android:textColor="@color/color_dark_grey"
+                                        tools:ignore="TooDeepLayout" />
+
+                                </com.google.android.material.textfield.TextInputLayout>
+
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                            <TextView
+                                android:id="@+id/tvErrPass"
+                                style="@style/err_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="@dimen/padding_normal"
+                                android:visibility="gone" />
+
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/dimension_40"
+                                android:layout_marginTop="12dp"
+                                android:orientation="horizontal"
+                                android:weightSum="2">
+
+                                <TextView
+                                    android:id="@+id/btnLogin"
+                                    android:layout_width="0dp"
+                                    android:layout_height="@dimen/btn_height"
+                                    android:background="@drawable/slt_btn_login"
+                                    android:clickable="true"
+                                    android:focusable="true"
+                                    android:gravity="center"
+                                    android:text="@string/header_login"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/button_text_size"
+                                    android:textStyle="bold"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toStartOf="@id/guideline"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <View
+                                    android:id="@+id/guideline"
+                                    android:layout_width="20dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginVertical="8dp"
+                                    android:orientation="vertical"
+
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <TextView
+                                    android:id="@+id/tvRegister"
+                                    android:layout_width="0dp"
+                                    android:layout_height="@dimen/btn_height"
+                                    android:background="@drawable/slt_btn_register"
+                                    android:clickable="true"
+                                    android:focusable="true"
+                                    android:gravity="center"
+                                    android:text="@string/header_registry"
+                                    android:textColor="@color/color_light_red"
+                                    android:textSize="@dimen/button_text_size"
+                                    android:textStyle="bold"
+                                    android:visibility="visible"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toEndOf="@id/guideline"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                                <TextView
+                                    android:id="@+id/btnLoginCenter"
+                                    android:layout_width="130dp"
+                                    android:layout_height="@dimen/btn_height"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/slt_btn_login"
+                                    android:clickable="true"
+                                    android:focusable="true"
+                                    android:gravity="center"
+                                    android:text="@string/header_login"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/button_text_size"
+                                    android:textStyle="bold"
+                                    android:visibility="gone"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/layout_content_mid"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="@dimen/padding_xnormal"
+                        android:paddingEnd="@dimen/padding_xnormal"
+                        android:paddingBottom="@dimen/padding_xnormal"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:id="@+id/tvHeaderLoginSocial"
+                            style="@style/header_text_land"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/lbl_or_login_with"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="end|right"
+                            android:orientation="horizontal"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@id/tvHeaderLoginSocial"
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:ignore="RtlHardcoded">
+
+                            <ImageButton
+                                android:id="@+id/btnFacebook"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="10dp"
+                                android:background="@drawable/transparent"
+                                android:src="@drawable/ic_fb_round"
+                                android:contentDescription="@string/lbl_login_facebook" />
+
+                            <ImageButton
+                                android:id="@+id/btnGoogle"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="10dp"
+                                android:background="@drawable/transparent"
+                                android:src="@drawable/ic_gg_round"
+                                android:contentDescription="@string/lbl_signin_google"  />
+
+                            <ImageButton
+                                android:id="@+id/btnPlayNow"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="10dp"
+                                android:background="@drawable/transparent"
+                                android:src="@drawable/ic_playnow_round"
+                                android:contentDescription="@string/lbl_play_now"  />
+                        </LinearLayout>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layout_content_bottom"
+                        android:layout_width="@dimen/leftContent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/bg_login_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/padding_xnormal"
+                        android:visibility="gone">
+
+                        <TextView
+                            style="@style/header_text_land"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/header_login"
+                            android:textAllCaps="true"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+
+                        <LinearLayout
+                            android:id="@+id/btnLoginFacebook2"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dimension_40"
+                            android:layout_marginTop="16dp"
+                            android:background="@drawable/slt_btn_facebook"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginStart="16dp"
+                                android:src="@drawable/ic_fb_white_round"
+                                android:contentDescription="@string/lbl_login_facebook" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="@string/lbl_login_facebook"
+                                android:textAllCaps="false"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/button_text_size" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/btnGoogle2"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dimension_40"
+                            android:layout_marginTop="12dp"
+                            android:background="@drawable/slt_btn_google"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginStart="16dp"
+                                android:background="@android:color/transparent"
+                                android:src="@drawable/ic_gg_2"
+                                android:contentDescription="@string/lbl_signin_google" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="@string/lbl_signin_google"
+                                android:textAllCaps="false"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/button_text_size" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/btnLoginPlayNow2"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dimension_40"
+                            android:layout_marginTop="12dp"
+                            android:background="@drawable/slt_btn_play_now"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginStart="16dp"
+                                android:src="@drawable/ic_playnow_white"
+                                android:contentDescription="@string/lbl_play_now"  />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="@string/lbl_play_now"
+                                android:textAllCaps="false"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/button_text_size" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:id="@+id/termContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_margin="16dp"
+                android:layout_marginTop="@dimen/padding_xnormal"
+                android:background="@android:color/transparent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/contentPanel">
+
+                <androidx.appcompat.widget.AppCompatCheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:button="@drawable/ic_checkbox_round_checked"
+                    android:checked="true"
+                    android:clickable="false"
+                    android:gravity="center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/padding_small"
+                    android:layout_marginEnd="@dimen/padding_small"
+                    android:background="@android:color/transparent"
+                    android:text="@string/lbl_agree_term"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/term_text_size" />
+
+                <TextView
+                    android:id="@+id/tvTerm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/padding_small"
+                    android:background="@android:color/transparent"
+                    android:gravity="center"
+                    android:text="@string/lbl_term"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/term_text_size" />
+
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/btnClose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_margin="@dimen/padding_xnormal"
+                android:background="@null"
+                android:contentDescription="@string/close"
+                android:padding="@dimen/padding_small"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_close_new"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <LinearLayout
+                android:id="@+id/contentIv18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="16dp"
+                android:layout_margin="@dimen/padding_xnormal"
+                android:background="@drawable/bg_18plus_login"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <ImageView
+                    android:id="@+id/iv18Plus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/icon_18_plus_height"
+                    android:layout_gravity="end"
+                    android:background="@null"
+                    android:contentDescription="@string/blank"
+                    android:maxWidth="@dimen/icon_18_plus_height"
+                    android:padding="@dimen/padding_small"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_logo18" />
+
+                <TextView
+                    android:id="@+id/tvPlayTimeNoti"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/ic18_text_size"
+                    android:visibility="gone"
+                  />
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <LinearLayout
+        android:id="@+id/layout_keyboard_space"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical" />
+
+
+</LinearLayout>

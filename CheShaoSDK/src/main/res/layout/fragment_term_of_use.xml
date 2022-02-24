@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="@dimen/dialog_width"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/padding_large"
+        app:cardBackgroundColor="@null"
+        app:cardCornerRadius="@dimen/padding_normal"
+        app:cardElevation="0dp"
+        app:cardPreventCornerOverlap="true">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/dlgTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="@dimen/padding_large"
+                    android:text="@string/lbl_quick_login"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/button_text_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/dlgContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:justificationMode="inter_word"
+                    android:lineSpacingExtra="@dimen/padding_small"
+                    android:paddingLeft="@dimen/padding_large"
+                    android:paddingRight="@dimen/padding_large"
+                    android:paddingBottom="@dimen/padding_large"
+                    android:text="@string/term_of_use_confirm"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/input_text_size" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/gray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/header_bar_height"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/btnRetry"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/slt_btn_dialog_confirm"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:padding="@dimen/padding_normal"
+                        android:text="@string/yes"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/button_text_size"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+
+                    <View
+                        android:layout_width="1px"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/btnYes"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/slt_btn_dialog_confirm"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:padding="@dimen/padding_normal"
+                        android:text="@string/yes"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/button_text_size"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+
+                    <View
+                        android:layout_width="1px"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/btnNo"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/slt_btn_dialog_confirm"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:padding="@dimen/padding_normal"
+                        android:text="@string/close"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/button_text_size"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

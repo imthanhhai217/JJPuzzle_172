@@ -1,0 +1,405 @@
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6CA1C6"
+    android:orientation="vertical"
+    android:overScrollMode="never"
+    android:padding="@dimen/padding_large">
+
+    <LinearLayout
+        android:id="@+id/main_game_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/app_name"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:background="@drawable/slt_btn_feature"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_small"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbVi"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="VI" />
+
+            <RadioButton
+                android:id="@+id/rbEn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="EN" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_small"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbHozial"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Màn hình ngang" />
+
+            <RadioButton
+                android:id="@+id/rbPort"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Màn hình dọc" />
+        </RadioGroup>
+
+
+        <EditText
+            android:id="@+id/tvUrl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:hint="http://"
+            android:padding="@dimen/padding_small"
+
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btnSaveUrl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/padding_large"
+            android:background="@drawable/slt_btn_feature"
+            android:text="@string/save_base_url"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_xnormal"
+            android:layout_marginBottom="@dimen/padding_normal"
+            android:background="@drawable/slt_btn_feature"
+            android:text="@string/login"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_xnormal"
+            android:columnCount="2"
+            android:useDefaultMargins="true">
+
+            <Button
+                android:id="@+id/btn_login_native"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill_horizontal"
+                android:layout_marginBottom="@dimen/padding_normal"
+                android:background="@drawable/slt_btn_feature"
+                android:text="@string/login_native"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/btn_logout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill_horizontal"
+                android:layout_marginBottom="@dimen/padding_normal"
+                android:background="@drawable/slt_btn_feature"
+                android:text="@string/logout"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/btn_payment"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill_horizontal"
+                android:layout_marginBottom="@dimen/padding_normal"
+                android:background="@drawable/slt_btn_feature"
+                android:text="@string/payment"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/btn_payment_with_state"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill_horizontal"
+                android:layout_marginBottom="@dimen/padding_normal"
+                android:background="@drawable/slt_btn_feature"
+                android:text="@string/payment_with_state"
+                android:textColor="@color/white" />
+            <Button
+                android:id="@+id/btn_dashboard"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill_horizontal"
+                android:layout_marginBottom="@dimen/padding_normal"
+                android:background="@drawable/slt_btn_feature"
+                android:text="@string/dashboard"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/btn_share_image"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill_horizontal"
+                android:layout_marginBottom="@dimen/padding_normal"
+                android:background="@drawable/slt_btn_feature"
+                android:text="Share Img FB"
+                android:textColor="@color/white" />
+
+
+        </GridLayout>
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radioButton_start_extract"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:onClick="onRadioButtonClicked"
+                android:text="Extract Start Data" />
+
+            <RadioButton
+                android:id="@+id/radioButton_finish_extract"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:onClick="onRadioButtonClicked"
+                android:text="Extract Finish Data" />
+
+            <RadioButton
+                android:id="@+id/radioButton_resource_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:onClick="onRadioButtonClicked"
+                android:text="Download resource start" />
+
+            <RadioButton
+                android:id="@+id/radioButton_resource_finish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:onClick="onRadioButtonClicked"
+                android:text="Download resource finish" />
+
+
+            <RadioButton
+                android:id="@+id/radioButton_extract_cdn_finish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:onClick="onRadioButtonClicked"
+                android:text="Extract CDN finish" />
+
+            <RadioButton
+                android:id="@+id/radioButton_enter_gamebtn_clicked"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:onClick="onRadioButtonClicked"
+                android:text="Track clicked enter game btn (server id = 50)" />
+
+
+            <RadioButton
+                android:id="@+id/radioButton_tutorial_completed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:onClick="onRadioButtonClicked"
+                android:text="Tutorial complete" />
+
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/txt_level"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="level/vip level" />
+
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_xnormal"
+            android:columnCount="2"
+            android:useDefaultMargins="true">
+
+            <Button
+                android:id="@+id/btn_level_archived"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill_horizontal"
+                android:layout_marginBottom="@dimen/padding_normal"
+                android:background="@drawable/slt_btn_feature"
+                android:text="Level achieved"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/btn_vip_archived"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill_horizontal"
+                android:layout_marginBottom="@dimen/padding_normal"
+                android:background="@drawable/slt_btn_feature"
+                android:text="Vip achieved"
+                android:textColor="@color/white" />
+        </GridLayout>
+
+        <TextView
+            android:id="@+id/version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <EditText
+            android:id="@+id/txt_areaID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="area ID" />
+
+        <EditText
+            android:id="@+id/txt_roleID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="role ID" />
+
+        <Button
+            android:id="@+id/btn_save_charactor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/padding_normal"
+            android:background="@drawable/slt_btn_feature"
+            android:text="Create charactor"
+            android:textColor="@color/white" />
+
+
+        <Button
+            android:id="@+id/btn_send_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/padding_normal"
+            android:background="@drawable/slt_btn_feature"
+            android:text="Send Email"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btn_pick"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/padding_normal"
+            android:background="@drawable/slt_btn_feature"
+            android:text="Pick"
+            android:textColor="@color/white" />
+
+
+        <TextView
+            android:id="@+id/tv_event_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Event name"
+            android:text="Sự kiện Phá Cỗ Trung Thu - Đăng nhập nhận thưởng hehe" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thời gian bắt đầu :" />
+
+            <TextView
+                android:id="@+id/tv_event_time_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:text="05:05" />
+
+            <TextView
+                android:id="@+id/tv_event_date_start"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="24/09/2018" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thời gian kết thúc :" />
+
+            <TextView
+                android:id="@+id/tv_event_time_end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:text="15:05" />
+
+            <TextView
+                android:id="@+id/tv_event_date_end"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="25/09/2018 " />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_event_deeplink"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:text="gamesdk://event" />
+
+        <Button
+            android:id="@+id/btn_remind_me"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/padding_normal"
+            android:background="@drawable/slt_btn_feature"
+            android:text="Remind me"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/force_crash"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/slt_btn_feature"
+            android:text="Force crash" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

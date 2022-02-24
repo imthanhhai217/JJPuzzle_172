@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout_main_logout"
+    android:background="#90000000">
+    <RelativeLayout
+        android:layout_width="@dimen/dialog_logout_main_width"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/background_dialog_confirm">
+    <ImageView
+        android:id="@+id/iv_banner"
+        android:layout_width="@dimen/dialog_logout_img_banner_width"
+        android:layout_height="@dimen/dialog_logout_img_banner_height"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:scaleType="centerCrop"/>
+
+    <LinearLayout
+        android:id="@+id/layout_button"
+        android:layout_width="@dimen/dialog_logout_button_width"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/iv_banner"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_giftcode"
+            android:layout_height="@dimen/dialog_logout_form_button_height"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginRight="5dp"
+            android:drawableLeft="@drawable/ic_gift"
+            android:background="@drawable/button_giftcode_selector"
+            android:text="Giftcode"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:drawablePadding="-30dp"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/float_dialog_txt_guide_textSize" />
+
+        <Button
+            android:id="@+id/btn_fanpage"
+            android:layout_height="@dimen/dialog_logout_form_button_height"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/button_facebook_selector"
+            android:text="Fanpage"
+            android:drawableLeft="@drawable/ic_fb"
+            android:textStyle="bold"
+            android:drawablePadding="-30dp"
+            android:textColor="@android:color/white"
+            android:textAllCaps="false"
+            android:textSize="@dimen/float_dialog_txt_guide_textSize" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_height="@dimen/dialog_logout_form_button_height"
+        android:layout_width="@dimen/dialog_button_logout_width"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_below="@id/layout_button"
+        android:layout_centerInParent="true"
+        android:background="@drawable/button_cancel_selector"
+        android:text="Đăng xuất"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:textAllCaps="false"
+        android:textSize="@dimen/float_dialog_txt_guide_textSize" />
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/btn_close"
+        android:layout_width="50dp"
+        android:layout_height="@dimen/header_bar_height"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@null"
+        android:contentDescription="@string/blank"
+        android:scaleType="center"
+        android:src="@drawable/ic_action_cancel" />
+</RelativeLayout>

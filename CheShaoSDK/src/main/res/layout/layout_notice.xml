@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/layoutNotiIngame"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_layout_notice_180_min"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="200dp"
+        android:alpha="0.7"
+        android:background="@drawable/background_noti_pick"
+        android:gravity="center"
+        android:padding="5dp"
+        tools:ignore="UselessParent">
+
+        <TextView
+            android:id="@+id/txt_notice"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ellipsize="marquee"
+            android:linksClickable="true"
+            android:singleLine="true"
+            android:text="@string/txt_processing"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+    </FrameLayout>
+</LinearLayout>

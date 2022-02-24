@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cancel">Hủy</string>
+    <string name="ok">OK</string>
+    <string name="txt_processing">Đang xử lý&#8230;</string>
+    <string name="hello">Xin chào</string>
+    <string name="reload">Tải lại</string>
+    <string name="connection_lost">Mất kết nối</string>
+    <string name="something_went_wrong">Có lỗi xảy ra</string>
+    <string name="connection_error">Lỗi kết nối</string>
+    <string name="unable_to_connect">Không thể kết nối tới server</string>
+    <string name="dialog_tips_title">Bạn có thể hiển thị nút điều khiển như sau</string>
+    <string name="warning">Chú ý</string>
+    <string name="message_warning">Bạn cần cấp thêm quyền để có thể trải nghiệm ứng dụng tốt nhất</string>
+    <string name="dont_ask_again">Không hiển thị lại</string>
+    <string name="dismiss">Tắt</string>
+    <string name="hide">Ẩn</string>
+    <string name="remind_me">Nhắc lại</string>
+    <string name="retry">Thử lại</string>
+    <string name="exit">Thoát</string>
+    <string name="please_wait">Xin đợi</string>
+    <string name="logging_in">Đang đăng nhập</string>
+    <string name="connecting_facebook">Đang kết nối tới Facebook của bạn</string>
+    <string name="connecting_google">Đang kết nối tới tài khoản Google của bạn</string>
+    <string name="connecting_google_play">Đang kết nối tới Google Play</string>
+    <string name="connecting_server">Đang kết nối tới server</string>
+    <string name="copied">Đã copy!</string>
+    <string name="copy">Copy</string>
+    <string name="complete_now">Hoàn thành ngay</string>
+    <string name="notice">Thông báo</string>
+    <string name="bind_account">Nối tài khoản ngay</string>
+    <string name="attention_overlay">Chú ý</string>
+    <string name="draw_over_apps_message">Bạn cần cấp thêm quyền để game hoạt động tốt nhất</string>
+    <string name="attention_permission">Chú ý</string>
+    <string name="attention_message" formatted="false">%s cần quyền truy cập bộ nhớ để giải nén tài nguyên game.</string>
+
+    <string name="alert_image_validate">Chỉ được chọn tối đa 3 ảnh</string>
+    <string name="error_network">Làm ơn kiểm tra lại mạng của bạn</string>
+    <string name="server_client_id">609758802698-1u6ed1v2kdkduftopiekrpl9c5vqnrpl.apps.googleusercontent.com</string>
+    <string name="action_example">Example action</string>
+    <string name="action_settings">Cài đặt</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="close">Đóng</string>
+    <string name="news">Tin tức</string>
+    <string name="event">Sự kiện</string>
+    <string name="giftcode">Giftcode</string>
+    <string name="close_giftcode">Đóng</string>
+    <string name="copy_giftcode">Copy</string>
+    <string name="gcm_sender_id">461098885975</string>
+    <string name="appsflyer_dev_key">cfgYFoj97okaEbzqp8q5w5</string>
+    <string name="do_you_want_close">Bạn có muốn đóng không ?</string>
+    <string name="message_exit">Bạn có muốn thoát không ?</string>
+    <string name="message_logout">Bạn có muốn đăng xuất không ?</string>
+    <string name="logout">Đăng xuất</string>
+
+    <string name="overlay_message" formatted="false">%s cần thêm quyền để mang đến cho bạn trải nghiệm tốt nhất.</string>
+    <string name="are_you_sure_exit">Bạn có thực sự muốn thoát?</string>
+    <string name="images_selected">Ảnh đã chọn</string>
+
+    <string name="open_with_browser">Bạn sẽ chuyển app khác . Bạn có muốn tiếp tục?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="event_end">Sự kiện đã kết thúc</string>
+    <string name="event_scheduled">Sự kiện sẽ được nhắc nhở 05 phút trước khi diễn ra</string>
+    <string name="calendar_not_found">Có lỗi xảy ra, không tìm thấy Ứng dụng lịch!</string>
+    <string name="notifi">Thông báo</string>
+    <string name="dialog_share_image_facebook">Bạn cần cài đặt ứng dụng Facebook để thực hiện chức năng này.</string>
+    <string name="install">Cài đặt</string>
+
+    <string name="header_registry">Đăng ký</string>
+    <string name="header_login">Đăng nhập</string>
+
+    <string name="lbl_account">Tài khoản</string>
+    <string name="lbl_password">Mật khẩu</string>
+    <string name="lbl_input_account">Email/Số điện thoại/Tên đăng nhập</string>
+    <string name="lbl_input_pass">Mật khẩu</string>
+    <string name="lbl_agree_term">Tôi đã đọc và đồng ý với</string>
+    <string name="lbl_term">&lt;u&gt;Điều khoản&lt;/u&gt;</string>
+
+    <string name="err_account">Email/Tên đăng nhập/SĐT/ Mật khẩu không đúng</string>
+    <string name="err_account_empty">Tài khoản không được để trống</string>
+    <string name="err_password_empty">Mật khẩu không được để trống</string>
+    <string name="err_login_email_input_err">Thông tin đăng nhập không chính xác</string>
+    <string name="err_pass_special_digit">Mật khẩu không được chứa ký tự đặc biệt</string>
+    <string name="err_acc_special_digit">Tài khoản không được chứa ký tự đặc biệt</string>
+    <string name="err_user_length">Tài khoản chứa tối thiểu 6 ký tự</string>
+    <string name="err_pass_length">Mật khẩu chứa tối thiểu 6 ký tự</string>
+    <string name="err_acc_white_space">Tài khoản không được chứa khoảng trống(dấu cách)</string>
+    <string name="err_pass_white_space">Mật khẩu không được chứa khoảng trống(dấu cách)</string>
+    <string name="lbl_play_now">Chơi ngay</string>
+    <string name="lbl_quick_login">Đăng nhập nhanh</string>
+    <string name="term_of_use_confirm"> Chúng tôi sẽ sử dụng thông tin SSAID và IMEI trên máy của bạn để tạo tài khoản đăng nhập ứng dụng. Các thông tin này được bảo mật và chỉ được sử dụng trong ứng dụng này mà không chia sẻ cho bất kỷ bên nào khác. Bạn cần xác nhận để tiếp tục. Chúng tôi khuyến cáo bạn sử dụng các hình thức đăng nhập bằng Facebook hoặc Email để tránh mất dữ liệu khi cài lại ứng dụng.</string>
+    <string name="lbl_signin_google">Đăng nhập bằng Google</string>
+    <string name="lbl_login_facebook">Đăng nhập bằng Facebook</string>
+    <string name="lbl_retry">Thử lại</string>
+    <string name="lbl_log_out_success">Đăng xuất thành công</string>
+    <string name="lbl_play_game_too_long">Chơi game quá 180 phút một ngày sẽ ảnh hưởng tới sức khỏe</string>
+    <string name="lbl_please_wait">Vui lòng đợi !</string>
+    <string name="err_server_unresponse">Có lỗi xảy ra , vui lòng thử lại !</string>
+    <string name="err_and_try_again_late">Có lỗi xảy ra , vui lòng thử lại sau  !</string>
+    <string name="err_404">The Game was not found. | The Account was not found.</string>
+    <string name="err_422">Dữ liệu không hợp lệ.</string>
+    <string name="err_401">Unauthenticated</string>
+    <string name="err_400">Bad request, missing parameter.</string>
+    <string name="err_fb_405">Phương thức không hợp lệ</string>
+    <string name="err_fb_402">Tham số không hợp lệ</string>
+    <string name="err_fb_401">Lỗi tài khoản Facebook liên quan</string>
+    <string name="err_fb_404">Sai URL</string>
+    <string name="lbl_not_login">Bạn chưa đăng nhập</string>
+    <string name="lbl_already_login">Bạn đã đăng nhập</string>
+    <string name="lbl_feature_in_dev">Tính năng đang phát triển</string>
+    <string name="err_title_dialog">Có lỗi xảy ra!</string>
+    <string name="lbl_login_to_your_account">Đăng nhập</string>
+    <string name="lbl_or_login_with">Đăng nhập với</string>
+    <string name="lbl_back">Back</string>
+    <string name="lbl_log_out">Đăng xuất</string>
+    <string name="lbl_forget_pass">Quên mật khẩu?</string>
+    <string name="info_forget_pass">Vui lòng truy cập trang ID để thực hiện cập nhật mật khẩu.</string>
+    <string name="text_dashboard_sheet">Bạn cần thực hiện cấp quyền cho ứng dụng để thực hiện chức năng này.</string>
+    <string name="err_connect_facebook">Không thể kết nối tới Facebook</string>
+    <string name="err_empty_charactor">Không tồn tại thông tin Nhân vật!</string>
+    <string name="err_verify_purchase">Giao dịch không hoàn thành.</string>
+    <string name="err_input_more_than_5">Bạn đã nhập tài khoản sai quá 5 lần, nếu bạn cần giúp đỡ về thông tin tài khoản, vui lòng truy cập trang chủ để được hỗ trợ.\nHoặc bạn có thể đăng nhập bằng Chơi Ngay </string>
+    <string name="error_transaction">Giao dịch xảy ra lỗi, Vui lòng thử lại sau !</string>
+    <string name="login">Đăng nhập</string>
+    <string name="enter_email">Điền email</string>
+    <string name="txt_title_payment">Nạp</string>
+    <string name="welcome">Xin chào </string>
+    <string name="list_item_is_empty">Chưa có gói nạp, vui lòng thử lại sau!</string>
+    <string name="product_id_is_incorrect">Vui lòng kiểm tra lại Product ID</string>
+
+
+</resources>

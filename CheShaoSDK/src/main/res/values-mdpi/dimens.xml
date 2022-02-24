@@ -1,0 +1,42 @@
+<resources>
+
+    <dimen name="dialog_width">550dp</dimen>
+
+    <dimen name="padding_xnormal">10dp</dimen>
+    <dimen name="padding_normal">8dp</dimen>
+    <dimen name="padding_snormal">4dp</dimen>
+    <dimen name="padding_small">2dp</dimen>
+    <dimen name="padding_ssmall">1dp</dimen>
+    <dimen name="padding_large">14dp</dimen>
+
+    <!--    Layout-->
+    <dimen name="leftContent">200dp</dimen>
+    <dimen name="rightContent">198dp</dimen>
+    <!--  button - icon size -->
+    <dimen name="icon_18_plus_height">32</dimen>
+    <dimen name="icon_term_size">14dp</dimen>
+    <dimen name="button_close_width">24dp</dimen>
+    <dimen name="button_close_height">30dp</dimen>
+    <dimen name="button_corner">4dp</dimen>
+    <dimen name="btn_height">24dp</dimen>
+    <dimen name="btn_height_port">22dp</dimen>
+    <dimen name="button_text_size">10sp</dimen>
+    <dimen name="dimension_5">5dp</dimen>
+
+    <!--    Toast-->
+    <dimen name="toast_height">30dp</dimen>
+    <dimen name="toast_corner">15dp</dimen>
+    <dimen name="toast_icon_size">20dp</dimen>
+    <dimen name="toast_padding">5dp</dimen>
+
+    <!--  Text size -->
+    <dimen name="input_text_size">11sp</dimen>
+    <dimen name="term_text_size">9sp</dimen>
+    <dimen name="ic18_text_size">7sp</dimen>
+    <dimen name="toast_text_size">11sp</dimen>
+    <dimen name="input_text_size_land">11sp</dimen>
+    <dimen name="header_text_size_land">11sp</dimen>
+    <dimen name="err_text_size">10sp</dimen>
+    <dimen name="radius_login">12dp</dimen>
+
+</resources>

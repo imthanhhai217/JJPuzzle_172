@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/selected"
+    android:oneshot="false" >
+
+    <item
+        android:drawable="@drawable/float_hide_tips_001"
+        android:duration="350"/>
+    <item
+        android:drawable="@drawable/float_hide_tips_002"
+        android:duration="350"/>
+    <item
+        android:drawable="@drawable/float_hide_tips_003"
+        android:duration="350"/>
+    <item
+        android:drawable="@drawable/float_hide_tips_004"
+        android:duration="2000"/>
+
+</animation-list>

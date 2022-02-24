@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="false">SDK IP 125 v5.0.0</string>
+    <string name="blank" translatable="false" />
+    <string name="cancel">Cancel</string>
+    <string name="ok">OK</string>
+    <string name="txt_processing">Processing&#8230;</string>
+
+    <string name="hello">Hello</string>
+    <string name="reload">Reload</string>
+    <string name="connection_lost">Oops! Connection lost</string>
+    <string name="something_went_wrong">Oops! Something went wrong</string>
+    <string name="connection_error">Connection error</string>
+    <string name="unable_to_connect">Cannot connect to server</string>
+    <string name="dialog_tips_title">You can show up the control button as following</string>
+
+    <string name="warning">Attention</string>
+    <string name="message_warning">We need more permission to deliver the best experience</string>
+    <string name="dont_ask_again">Don\'t ask again</string>
+    <string name="dismiss">Dismiss</string>
+    <string name="hide">Hide</string>
+    <string name="remind_me">Remind me</string>
+    <string name="retry">Retry</string>
+    <string name="exit">Exit</string>
+    <string name="please_wait">Please wait</string>
+    <string name="logging_in">Logging in</string>
+    <string name="connecting_facebook">Connecting to your Facebook account</string>
+    <string name="connecting_google">Connecting to your Google account</string>
+    <string name="connecting_google_play">Connecting to your Google Play account</string>
+    <string name="connecting_server">Connecting to server</string>
+    <string name="copied">Copied!</string>
+    <string name="copy">Copy</string>
+    <string name="complete_now">Complete now</string>
+    <string name="notice">Notice</string>
+    <string name="bind_account">Bind account</string>
+    <string name="draw_over_apps_message">You need to grant Draw Over Apps permission to enable game to perform its full features</string>
+    <string name="alert_image_validate">You can only select upto 3 photos</string>
+    <string name="error_network">Please check your network</string>
+    <string name="server_client_id">609758802698-1u6ed1v2kdkduftopiekrpl9c5vqnrpl.apps.googleusercontent.com</string>
+    <string name="action_example">Example action</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="close">Close</string>
+    <string name="news">News</string>
+    <string name="event">Event</string>
+    <string name="giftcode">Giftcode</string>
+    <string name="close_giftcode">Close</string>
+    <string name="copy_giftcode">Copy</string>
+    <string name="gcm_sender_id">461098885975</string>
+    <string name="appsflyer_dev_key">cfgYFoj97okaEbzqp8q5w5</string>
+    <string name="do_you_want_close">Do you want close?</string>
+    <string name="message_exit">Do you want to exit?</string>
+    <string name="message_logout">Do you want logout your account ?</string>
+    <string name="logout">Logout</string>
+    <string name="attention_overlay">Attention</string>
+    <string name="attention_permission">Attention</string>
+    <string name="overlay_message" formatted="false">%s need more permission to deliver the best experience.</string>
+    <string name="attention_message" formatted="false">%s need read and write permission to extract game resource.</string>
+    <string name="are_you_sure_exit">Do you want to exit?</string>
+    <string name="images_selected">Images selected</string>
+
+    <string name="open_with_browser">You are leaving the app. Continue?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="noti_after_user_deny_permission" translatable="false">Permission Denied.</string>
+    <string name="event_end">Event has been closed</string>
+    <string name="event_scheduled">Event has been scheduled and will notice you 05 minitues before taking place.</string>
+    <string name="calendar_not_found">Can not found your calendar app!</string>
+
+    <string name="dialog_share_image_facebook">You need to install the Facebook application to perform this function</string>
+    <string name="notifi">Notification</string>
+    <string name="install">Install</string>
+
+    <string name="title_force_logout" translatable="false">Phiên đăng nhập của bạn đã hết hạn. \n    Vui lòng mở lại game để tiếp tục.</string>
+    <string name="header_registry">Register</string>
+    <string name="header_login">Login</string>
+    <string name="lbl_account">Account</string>
+    <string name="lbl_password">Password</string>
+    <string name="lbl_input_account">Email/Phone number/Username</string>
+    <string name="lbl_input_pass">Password</string>
+    <string name="lbl_agree_term">I have read and agree to </string>
+    <string name="lbl_term">&lt;u&gt;Terms of use&lt;/u&gt;</string>
+    <string name="err_account">Email/Phone number/Username/Password is incorrect </string>
+    <string name="err_account_empty">Account can not be empty</string>
+    <string name="err_password_empty">Password can not be empty</string>
+    <string name="err_acc_special_digit">Account can not contain special digit</string>
+    <string name="err_pass_special_digit">Password can not contain special digit</string>
+    <string name="err_user_length">Account must contain at least 6 characters</string>
+    <string name="err_pass_length">Password must contain at least 6 characters</string>
+    <string name="err_acc_white_space">Account must have non-whitespace</string>
+    <string name="err_pass_white_space">Password must have non-whitespace</string>
+    <string name="lbl_play_now">Play Now</string>
+
+    <string name="lbl_quick_login">Quick login </string>
+    <string name="term_of_use_confirm">We will use your device&#96;s SSAID and IMEI information to create an app login account.  This information is confidential and is only used in this application without sharing to any other party.  You need confirmation to continue.  We recommend that you use the login form using Facebook or Email to avoid data loss when reinstalling the application.</string>
+    <string name="lbl_signin_google">Login with Google</string>
+    <string name="lbl_login_facebook">Login with Facebook</string>
+    <string name="lbl_retry">Retry</string>
+    <string name="lbl_log_out_success"> Logout Success</string>
+    <string name="lbl_not_login">You are not logged in</string>
+    <string name="lbl_already_login">You are already logged in</string>
+    <string name="lbl_feature_in_dev">Features are under development</string>
+    <string name="lbl_play_game_too_long">Playing games for more than 180 minutes a day will affect health</string>
+    <string name="lbl_please_wait">Please wait !</string>
+    <string name="err_server_unresponse">An error occurred, please try again !</string>
+    <string name="err_and_try_again_late">An error occurred, please try again later !</string>
+    <string name="err_login_email_input_err">Login information is incorrect</string>
+    <string name="err_404">The Game was not found. | The Account was not found.</string>
+    <string name="err_422">The given data was invalid.</string>
+    <string name="err_401">Unauthenticated</string>
+    <string name="err_400">Bad request, missing parameter.</string>
+    <string name="err_fb_405">The method is not valid</string>
+    <string name="err_fb_402">The parameter is not valid</string>
+    <string name="err_fb_401">Error related Facebook account</string>
+    <string name="err_fb_404">Wrong url</string>
+    <string name="err_title_dialog">An error occurred!</string>
+
+    <string name="lbl_login_to_your_account">Sign in</string>
+    <string name="lbl_or_login_with">Login via </string>
+    <string name="lbl_back">Back</string>
+    <string name="lbl_log_out">Log out</string>
+    <string name="lbl_forget_pass">Forgot password?</string>
+    <string name="info_forget_pass">Please visit the ID page to perform the password update.</string>
+    <string name="err_connect_facebook">Can not connect to Facebook</string>
+    <string name="text_dashboard_sheet">You need to give permission to the app to do this.</string>
+    <string name="err_empty_charactor">Character information does not exist!</string>
+    <string name="err_verify_purchase">Transaction not completed.</string>
+    <string name="err_input_more_than_5">You entered the wrong account more than 5 times, if you need help with your account information, please visit the Home page for assistance.\nOr you can log in with Play Now </string>
+    <string name="error_transaction">An error occurred, please try again !</string>
+    <string name="login">Login</string>
+    <string name="enter_email">Enter your email</string>
+    <string name="txt_title_payment">Purchase</string>
+    <string name="welcome">Welcome </string>
+    <string name="list_item_is_empty">List item is empty, please try again!</string>
+    <string name="product_id_is_incorrect">Please check product id again!</string>
+</resources>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/background_dialog_confirm"
+    android:paddingRight="40dp"
+    android:paddingLeft="40dp"
+    android:paddingTop="@dimen/float_dialog_paddingTop">
+
+    <TextView
+        android:id="@+id/txt_message"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/img_guide"
+        android:layout_alignRight="@+id/img_guide"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:text="Bạn đồng ý hủy trả lời?"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/float_dialog_txt_guide_textSize" />
+
+    <LinearLayout
+        android:id="@+id/layout_confirm"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="35dp"
+        android:layout_alignLeft="@id/img_guide"
+        android:layout_alignRight="@id/img_guide"
+        android:layout_below="@id/txt_message"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="34dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/button_cancel_selector"
+            android:text="@string/cancel"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/float_dialog_txt_guide_textSize" />
+
+        <Button
+            android:id="@+id/btn_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="34dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/button_confirm_selector"
+            android:text="@string/ok"
+            android:textColor="@android:color/white"
+            android:textAllCaps="false"
+            android:textSize="@dimen/float_dialog_txt_guide_textSize" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black">
+
+    <com.supho.gui.SuphoPagerTabStrip xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/pager_title_strip"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_gravity="top"
+        android:background="@android:color/black"
+        android:visibility="gone"
+        app:pstsIndicatorHeight="2dp"
+        app:pstsShouldExpand="true"
+        app:pstsUnderlineColor="@android:color/transparent"
+        app:pstsUnderlineHeight="1dp" />
+
+    <com.supho.gui.SuphoViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/pager_title_strip"
+        android:background="@android:color/black" />
+
+    <com.supho.gui.view.SuphoIndicator
+        android:id="@+id/layout_indicator_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center|center_horizontal"
+        android:visibility="gone" />
+
+</RelativeLayout>

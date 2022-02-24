@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/imtha/OneDrive/Desktop/JJPuzzle_172/gameActivity/src/main/res/drawable/bg_contact_us.xml" value="0.1875" />
+        <entry key="..\:/Users/imtha/OneDrive/Desktop/JJPuzzle_172/gameActivity/src/main/res/drawable/bg_play_now.xml" value="0.1875" />
+        <entry key="..\:/Users/imtha/OneDrive/Desktop/JJPuzzle_172/gameActivity/src/main/res/drawable/bg_premiun.xml" value="0.1875" />
+        <entry key="..\:/Users/imtha/OneDrive/Desktop/JJPuzzle_172/gameActivity/src/main/res/drawable/bg_settings.xml" value="0.1875" />
+        <entry key="..\:/Users/imtha/OneDrive/Desktop/JJPuzzle_172/gameActivity/src/main/res/drawable/slt_btn_feature.xml" value="0.12395833333333334" />
+        <entry key="..\:/Users/imtha/OneDrive/Desktop/JJPuzzle_172/gameActivity/src/main/res/layout/activity_game.xml" value="0.1078125" />
+        <entry key="..\:/Users/imtha/OneDrive/Desktop/JJPuzzle_172/gameActivity/src/main/res/layout/activity_home.xml" value="0.22" />
+        <entry key="..\:/Users/imtha/OneDrive/Desktop/JJPuzzle_172/gameActivity/src/main/res/layout/activity_in_app_purchase.xml" value="0.1078125" />
+        <entry key="..\:/Users/imtha/OneDrive/Desktop/JJPuzzle_172/gameActivity/src/main/res/layout/activity_lib.xml" value="0.1078125" />
+        <entry key="..\:/Users/imtha/OneDrive/Desktop/JJPuzzle_172/gameActivity/src/main/res/layout/activity_playing.xml" value="0.1078125" />
+        <entry key="..\:/Users/imtha/OneDrive/Desktop/JJPuzzle_172/gameActivity/src/main/res/layout/activity_settings.xml" value="0.1078125" />
+        <entry key="..\:/Users/imtha/OneDrive/Desktop/JJPuzzle_172/gameActivity/src/main/res/layout/activity_splash.xml" value="0.1078125" />
+        <entry key="..\:/Users/imtha/OneDrive/Desktop/JJPuzzle_172/gameActivity/src/main/res/layout/demo_item.xml" value="0.1078125" />
+        <entry key="..\:/Users/imtha/OneDrive/Desktop/JJPuzzle_172/gameActivity/src/main/res/values-vi/font/kanit.xml" value="0.13802083333333334" />
+        <entry key="..\:/Users/imtha/OneDrive/Desktop/JJPuzzle_172/gameActivity/src/main/res/xml/drawable/ic_background.xml" value="0.12395833333333334" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
